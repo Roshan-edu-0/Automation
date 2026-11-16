@@ -1,0 +1,21 @@
+{
+  "name": "signup-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright signup QA automation for Authorized Partner",
+  "scripts": {
+    "test": "playwright test",
+    "test:negative": "playwright test automation/tests/validation.spec.ts",
+    "test:signup": "playwright test automation/tests/signup.spec.ts",
+    "test:report": "playwright show-report reports/html",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@types/node": "26.6.6",
+    "dotenv": "18.0.10",
+    "imapflow": "2.12.1",
+    "mailparser": "3.14.4",
+    "typescript": "7.0.2"
+  }
+}
